@@ -31,18 +31,28 @@
     <!--- Particles -->  <div class="animation-wrapper"> <div class="particle particle-1"></div> <div class="particle particle-2"></div> <div class="particle particle-3"></div> <div class="particle particle-4"></div> </div>
     <div class="center">
         <div class="animate__animated animate__jackInTheBox">
-            <h1>FoxBox</h1> <!--- Server Name -->
+            <h1>FoxBox<br /><button class="btn3" onclick="copyIp()">play.FoxBoxMC.net <i class="fas fa-copy"></i><small><br />Bedrock Port 19132.</small></button></h1> <!--- Server Name -->
             <p>Enhanced Minecraft Survival<p>
-            <p>There are <span data-playercounter-ip="play.foxboxmc.net">0</span> players online at play.FoxBoxMC.net</p> <!--- Description -->
-            <p>Bedrock Port 19132.</p>
+            <p>There are <span data-playercounter-ip="play.foxboxmc.net">0</span> players online.</p> <!--- Description -->
             <div class="animate__animated animate__bounceIn animate__delay-1s">
                 <a href="https://dc.foxboxmc.net"><button class="btn1"><i class="fab fa-discord"></i> Discord</button></a>
-                <a href="#"><button class="btn2"><i class="fas fa-shopping-basket"></i> Store</button></a>
-                <a href="https://youtu.be/2Qf0rGFQDdk"><button class="btn3"><i class="fab fa-youtube"></i> Join on Console</button></a>
-                <!--- <a href="#"><button class="btn4"><i class="fas fa-poll"></i> Vote</button></a> -->
+                <!--- <a href="#"><button class="btn2"><i class="fas fa-shopping-basket"></i> Store</button></a>
+                <a href="#"><button class="btn3"><i class="fas fa-poll"></i> Vote</button></a> -->
+                <a href="https://youtu.be/2Qf0rGFQDdk"><button class="btn4"><i class="fab fa-youtube"></i> Console Guide</button></a>
             </div>
         </div>
     </div>
+    <script>
+        function copyIp() {
+            navigator.clipboard
+                .writeText("play.FoxBoxMC.net")
+                .catch((error) => {
+                    console.error(
+                        `Failed to copy "${text}" to clipboard: ${error}`
+                    );
+                });
+        }
+    </script>
     <script src="app/js/script.js"></script>
     <script src="https://kit.fontawesome.com/5acf4d9e80.js" crossorigin="anonymous"></script>
 </body>

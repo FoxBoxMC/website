@@ -54,6 +54,12 @@ p {
   max-width: 80%;
 }
 
+small {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 800;
@@ -126,6 +132,17 @@ button:hover {
 .btn3:hover {
   -webkit-filter: drop-shadow(0 0 0 #154b03);
           filter: drop-shadow(0 0 0 #154b03);
+}
+
+.btn4 {
+  background-color: var(--youtube);
+  -webkit-filter: drop-shadow(8px 8px 1px #ad050b);
+          filter: drop-shadow(8px 8px 1px #ad050b);
+}
+
+.btn4:hover {
+  -webkit-filter: drop-shadow(0 0 0 #ad050b);
+          filter: drop-shadow(0 0 0 #ad050b);
 }
 
 @media screen and (max-width: 800px) {
